@@ -1,0 +1,116 @@
+.outer-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #eff5f7;
+  position: relative;
+}
+
+.main-content {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.auth-card-container {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.auth-card {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 32px;
+}
+
+.tile {
+  width: 80%;
+}
+
+#title {
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+
+#description {
+  margin-bottom: 32px;
+}
+
+.auth-input {
+  width: 80%;
+  padding: 8px 8px 8px 0;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.remember-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-container label,
+.remember-container a {
+  font-size: 12px; /* Set your desired font size here */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  color: #d5d5d5;
+  cursor: pointer;
+}
+
+#primary-button {
+  width: 80%;
+  padding: 12px 0;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#bottom-tile {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+#bottom-tile span {
+  cursor: pointer;
+  color: #72949b;
+}
+
+@media screen and (max-width: 844px) {
+  .auth-card-container {
+    flex: 1;
+    justify-content: center;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .auth-card {
+    width: 90%;
+  }
+}

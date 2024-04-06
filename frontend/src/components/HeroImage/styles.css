@@ -1,0 +1,18 @@
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 844px) {
+  .hero-image-container {
+    display: none;
+  }
+}

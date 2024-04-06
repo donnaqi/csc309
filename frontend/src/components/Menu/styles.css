@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  min-height: 0;
+  padding-bottom: 3px;
+  min-width: 0;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.menu-wrapper img {
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 47px;
+  width: 47px;
+}
+.menu-items {
+  display: block;
+  flex-direction: row;
+  margin-left: 50px;
+  height: 100%;
+}
+.menu-item {
+  display: flex;
+  float: left;
+  height: 100%;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.menu-item:hover {
+  border-bottom: 3px solid #20475c;
+}
+.menu-item a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-menu {
+  border-bottom: 3px solid #20475c;
+  font-weight: 600;
+}
+
+.profile-picture {
+  margin-left: auto;
+  margin-right: 16px;
+  width: 52px;
+  height: 52px;
+}
+.profile-picture .background {
+  background: #eff5f7;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture .background p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 22;
+}
+
+/* Responsive Design */
+@media (max-width: 590px) {
+  header {
+    height: 60px;
+  }
+  .menu-wrapper {
+    height: 55px;
+  }
+  .menu-wrapper img {
+    height: 40px;
+    width: 40px;
+  }
+  .menu-items {
+    margin-left: 30px;
+  }
+  .menu-items a {
+    font-size: 14px;
+  }
+  .menu-item {
+    width: 110px;
+  }
+  .profile-picture {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 50px;
+  }
+  .menu-wrapper {
+    height: 45px;
+  }
+  .menu-wrapper img {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+  }
+  .menu-items {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-items a {
+    font-size: 12px;
+  }
+  .menu-item {
+    width: 75px;
+  }
+  .profile-picture {
+    width: 35px;
+    height: 35px;
+  }
+}
